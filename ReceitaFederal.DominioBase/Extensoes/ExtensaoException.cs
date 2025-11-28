@@ -18,10 +18,8 @@ namespace ReceitaFederal.DominioBase.Extensoes
             while (exception is not null);
         }
 
-
         public static string ObterMensagensExceptionConcatenadas(this Exception exception, string separador = " | ") =>
             string.Join(separador, exception.ObterMensagensException());
-
 
         public static string ObterMensagensExceptionConcatenadas(this JsonException exception, string separador = " | ")
         {
